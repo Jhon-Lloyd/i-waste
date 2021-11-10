@@ -56,7 +56,6 @@ class SignUpActivity : AppCompatActivity() {
         binding.signupButton.setOnClickListener {
             //validate data
             validate()
-
             analytics = Firebase.analytics
         }
     }
@@ -68,6 +67,17 @@ class SignUpActivity : AppCompatActivity() {
         password = binding.password2.text.toString().trim()
         cpassword = binding.cPassword2.text.toString().trim()
 
+        database = FirebaseDatabase.getInstance().getReference("Users")
+        val user = user(name, email, password)
+        database.child(name).setValue(user).addOnSuccessListener {
+            binding.name2.text.clear()
+            binding.email2.text.clear()
+            binding.password2.text.clear()
+
+            Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener {
+            Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+        }
         //validate data
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             //invalid email format
@@ -91,7 +101,6 @@ class SignUpActivity : AppCompatActivity() {
             //data is valid. continue signup
             firebaseSignUp()
         }
-
 
 
     }
