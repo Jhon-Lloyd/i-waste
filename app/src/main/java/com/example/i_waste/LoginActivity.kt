@@ -10,6 +10,8 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.i_waste.databinding.ActivityLoginBinding
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
 
@@ -24,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private var email = ""
     private var password = ""
+
+    private lateinit var analytics: FirebaseAnalytics
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +46,8 @@ class LoginActivity : AppCompatActivity() {
         //init firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
+
+        analytics = Firebase.analytics
 
         // handle click, open register activity
         binding.SignupHere.setOnClickListener {

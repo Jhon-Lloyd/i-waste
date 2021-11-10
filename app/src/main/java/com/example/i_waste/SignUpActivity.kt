@@ -8,12 +8,18 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AppCompatDialog
 import com.example.i_waste.databinding.ActivitySignUpBinding
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
+
 class SignUpActivity : AppCompatActivity() {
+    private lateinit var database :DatabaseReference
+    private lateinit var analytics: FirebaseAnalytics
     //view binding
     private lateinit var binding: ActivitySignUpBinding
     //Action bar
@@ -50,6 +56,8 @@ class SignUpActivity : AppCompatActivity() {
         binding.signupButton.setOnClickListener {
             //validate data
             validate()
+
+            analytics = Firebase.analytics
         }
     }
 
@@ -84,6 +92,8 @@ class SignUpActivity : AppCompatActivity() {
             firebaseSignUp()
         }
 
+
+
     }
 
     private fun firebaseSignUp() {
@@ -117,3 +127,5 @@ class SignUpActivity : AppCompatActivity() {
         return super.onSupportNavigateUp()
     }
 }
+
+
