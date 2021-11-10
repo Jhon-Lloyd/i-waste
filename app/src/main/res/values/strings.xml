@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">i-waste</string>
+    <string name="no_account">Do not have account? <b>Sign Up Here!</b></string>
+</resources>
