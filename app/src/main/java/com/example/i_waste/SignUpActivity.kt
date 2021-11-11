@@ -38,17 +38,17 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Configure Actionbar
-        actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+
 
         //configure dialog
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please wait...")
         progressDialog.setMessage("Creating Account In...")
         progressDialog.setCanceledOnTouchOutside(false)
+
+        binding.backButton.setOnClickListener {
+            onBackPressed()
+        }
 
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
@@ -119,8 +119,8 @@ class SignUpActivity : AppCompatActivity() {
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Account Created with email $email",Toast.LENGTH_SHORT).show()
 
-                //open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                //open welcome activity
+                startActivity(Intent(this@SignUpActivity, WelcomeActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -131,10 +131,6 @@ class SignUpActivity : AppCompatActivity() {
             }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed() // go back to previous activity
-        return super.onSupportNavigateUp()
-    }
 }
 
 

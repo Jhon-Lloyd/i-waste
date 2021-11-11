@@ -34,8 +34,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //configure Action Bar
-        actionBar=supportActionBar!!
-        actionBar.title = "Login"
+
 
         //configure Progress dialog
         progressDialog = ProgressDialog(this)
@@ -91,7 +90,7 @@ class LoginActivity : AppCompatActivity() {
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Logged-in as as $email",Toast.LENGTH_SHORT).show()
                 //open profile activity
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->

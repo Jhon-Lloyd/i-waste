@@ -36,7 +36,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:contentDescription="logo"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo1" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed"
-            android:text="Login to your account"
+            android:text="Sign Up for an account"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -116,6 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/email1"
+                android:textColorHint="@color/cardview_dark_background"
                 app:passwordToggleEnabled="true"
                 app:hintEnabled="false">
 
@@ -141,6 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/password1"
+                android:textColorHint="@color/cardview_dark_background"
                 app:passwordToggleEnabled="true"
                 app:hintEnabled="false">
 

@@ -3,7 +3,6 @@ package com.example.i_waste
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import com.example.i_waste.databinding.ActivityProfileBinding
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
@@ -17,8 +16,6 @@ class ProfileActivity : AppCompatActivity() {
     //view binding
     private lateinit var binding: ActivityProfileBinding
 
-    //Actionbar
-    private lateinit var actionBar: ActionBar
 
     //FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
@@ -27,9 +24,7 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //configure Action
-        actionBar = supportActionBar!!
-        actionBar.title = "Profile"
+
 
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
@@ -37,6 +32,10 @@ class ProfileActivity : AppCompatActivity() {
 
 
         analytics = Firebase.analytics
+
+        binding.backButton.setOnClickListener {
+            startActivity(Intent(this@ProfileActivity, WelcomeActivity::class.java))
+        }
 
         //handle click , log out
         binding.Logout.setOnClickListener {

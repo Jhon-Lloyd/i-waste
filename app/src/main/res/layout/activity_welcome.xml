@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green_logo"
+    tools:context=".WelcomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
+        android:padding="5dp"
+        android:text="Welcome!!!!"
+        android:textColor="@color/cardview_dark_background"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/defButton"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:text="Definition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/getStartedbutton"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/getStartedbutton"
+        android:layout_width="163dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="124dp"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/profilebutton"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.879" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
