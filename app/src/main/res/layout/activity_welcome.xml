@@ -4,48 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_green_logo"
+    android:background="@drawable/bg_green"
     tools:context=".WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="364dp"
+        android:layout_height="159dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="logopic"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="199dp"
-        android:layout_height="57dp"
+        android:layout_width="334dp"
+        android:layout_height="254dp"
         android:padding="5dp"
-        android:text="Welcome!!!!"
+        android:text="Hi there, don't know what kind of garbage you're holding ? And where you can throw properly your waste?...Well you are in luck cause we have a solution to your little problem... This app can scan your waste with in just your camera from your phone and in just millisecond it can tell you the type or classification a garbage or waste and how to properly throw your waste. Because it is in i-Waste where"
         android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
 
     <Button
         android:id="@+id/defButton"
         android:layout_width="155dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/teal_700"
         android:text="Definition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/getStartedbutton"
-        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/getStartedbutton"
-        android:layout_width="163dp"
-        android:layout_height="58dp"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/teal_700"
         android:text="Get Started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/profilebutton"
-        android:layout_width="156dp"
-        android:layout_height="47dp"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_700"
         android:text="Profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
