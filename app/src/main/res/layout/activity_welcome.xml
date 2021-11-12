@@ -23,13 +23,13 @@
         app:layout_constraintVertical_bias="0.011" />
 
 
-
-    <TextView
+    <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView"
         android:layout_width="334dp"
         android:layout_height="254dp"
         android:padding="5dp"
-        android:text="Hi there, don't know what kind of garbage you're holding ? And where you can throw properly your waste?...Well you are in luck cause we have a solution to your little problem... This app can scan your waste with in just your camera from your phone and in just millisecond it can tell you the type or classification a garbage or waste and how to properly throw your waste. Because it is in i-Waste where"
+        android:text="Hi there! Are you feeling confused? Don't know what kind of garbage you are holding? Well, you're in luck cause i-Waste got your back! i-Waste can scan your waste with just the use of your phone camera. i-Waste can classify a garbage with just a snap of your finger and know how to throw wastes properly.
+"
         android:textColor="@color/cardview_dark_background"
         android:textSize="18dp"
         android:textStyle="bold"

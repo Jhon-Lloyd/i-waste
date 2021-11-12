@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_white"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".ScanActivity">
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_marginTop="60dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="230dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="230dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_700"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="230dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_700"
+        android:text="Scan" />
+
+    <TextView
+        android:id="@+id/gclassif"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:text="Garbage Classification"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+</LinearLayout>

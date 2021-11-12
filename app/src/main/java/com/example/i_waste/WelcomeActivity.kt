@@ -17,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
         }
 
         binding.getStartedbutton.setOnClickListener {
-            startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
+            startActivity(Intent(this@WelcomeActivity, ScanActivity::class.java))
         }
 
         binding.profilebutton.setOnClickListener {

@@ -110,7 +110,7 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="15dp"
-                    android:src="@drawable/img_1" />
+                    android:src="@drawable/img_10" />
 
                 <ImageView
                     android:layout_width="150dp"
