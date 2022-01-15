@@ -121,6 +121,21 @@
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/gsignbtn"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Signup_here"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="68dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
         </RelativeLayout>
 

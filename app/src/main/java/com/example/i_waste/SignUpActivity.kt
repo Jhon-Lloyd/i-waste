@@ -9,6 +9,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.i_waste.databinding.ActivitySignUpBinding
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FirebaseAuth
@@ -18,6 +19,7 @@ import com.google.firebase.ktx.Firebase
 
 
 class SignUpActivity : AppCompatActivity() {
+    private lateinit var googleSignInClient : GoogleSignInClient
     private lateinit var database :DatabaseReference
     private lateinit var analytics: FirebaseAnalytics
     //view binding

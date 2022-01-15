@@ -116,8 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/email1"
-                app:passwordToggleEnabled="true"
-                app:hintEnabled="false">
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/password2"
@@ -142,8 +142,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/password1"
                 android:textColorHint="@color/cardview_dark_background"
-                app:passwordToggleEnabled="true"
-                app:hintEnabled="false">
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/cPassword2"
@@ -171,6 +171,7 @@
                 android:background="@color/teal_700"
                 android:text="SIGN UP"
                 android:textColor="@color/white" />
+
 
 
         </RelativeLayout>

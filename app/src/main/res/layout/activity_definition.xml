@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_recycle"
+    android:background="@drawable/bg_green"
     tools:context=".DefinitionActivity">
 
     <RelativeLayout
@@ -91,13 +91,14 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="310dp"
+            <ImageView
+                android:id="@+id/bio"
+                android:layout_width="316dp"
                 android:layout_height="174dp"
                 android:layout_marginStart="16dp"
-                android:textColor="@color/cardview_dark_background"
                 android:layout_marginTop="16dp"
-                android:text="@string/descrip1"
+                android:src="@drawable/bio"
+                android:textColor="@color/cardview_dark_background"
                 android:textSize="15sp" />
 
             <LinearLayout
@@ -129,18 +130,20 @@
                 android:textStyle="bold"
                 android:textColor="@color/cardview_dark_background"/>
 
-            <TextView
-                android:layout_width="314dp"
-                android:layout_height="331dp"
+            <ImageView
+                android:id="@+id/non"
+                android:layout_width="316dp"
+                android:layout_height="174dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:src="@drawable/non"
                 android:textColor="@color/cardview_dark_background"
-                android:text="@string/descrip2"
                 android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -148,14 +151,14 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="15dp"
-                    android:src="@drawable/img_7"></ImageView>
+                    android:src="@drawable/img_7"/>
 
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/img_9"></ImageView>
+                    android:src="@drawable/img_9"/>
 
             </LinearLayout>
             <TextView
@@ -166,18 +169,19 @@
                 android:textStyle="bold"
                 android:textColor="@color/cardview_dark_background"/>
 
-            <TextView
-                android:layout_width="312dp"
-                android:layout_height="330dp"
+            <ImageView
+                android:layout_width="316dp"
+                android:layout_height="174dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:src="@drawable/rec"
                 android:textColor="@color/cardview_dark_background"
-                android:text="@string/descrip3"
                 android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -185,13 +189,13 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="18dp"
                     android:layout_marginRight="8dp"
-                    android:src="@drawable/img_4"></ImageView>
+                    android:src="@drawable/img_4"/>
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/img_5"></ImageView>
+                    android:src="@drawable/img_5"/>
 
             </LinearLayout>
 

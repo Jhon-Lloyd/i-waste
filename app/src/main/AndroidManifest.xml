@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -14,6 +15,10 @@
         android:theme="@style/Theme.Iwaste">
         <activity
             android:name=".ScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Scan1"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity

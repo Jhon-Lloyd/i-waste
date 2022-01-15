@@ -12,7 +12,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import com.example.i_waste.databinding.ActivityProfileBinding
 import com.example.i_waste.databinding.ActivityScanBinding
 import com.example.i_waste.ml.MobilenetV110224Quant
 import org.tensorflow.lite.DataType
@@ -37,7 +36,7 @@ class ScanActivity : AppCompatActivity() {
         binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var btnCamera: Button = findViewById(R.id.btnCamera)
+        val btnCamera: Button = findViewById(R.id.btnCamera)
         btnCamera.setOnClickListener{
             val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
@@ -87,7 +86,7 @@ class ScanActivity : AppCompatActivity() {
 
             var max = getMax(outputFeature0.floatArray)
 
-            gclassif.setText(townList[max])
+            gclassif.text = townList[max]
 
             // Releases model resources if no longer used.
             model.close()
@@ -111,7 +110,7 @@ class ScanActivity : AppCompatActivity() {
 
     }
 
-    fun getMax(arr:FloatArray) : Int{
+    private fun getMax(arr:FloatArray) : Int{
 
         var ind = 0
         var min = 0.0f

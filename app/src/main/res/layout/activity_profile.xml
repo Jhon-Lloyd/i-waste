@@ -47,14 +47,16 @@
         android:src="@drawable/logo1"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="304dp"
         android:text="You are logged-In as"
         android:textColor="@color/cardview_dark_background"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +78,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintVertical_bias="0.757" />
 
     <TextView
         android:id="@+id/email11"
@@ -87,10 +89,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Logout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <Button
         android:id="@+id/Logout"
